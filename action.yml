@@ -1,0 +1,18 @@
+name: "Update CF DNSLink"
+description: "Update/create CNAME to cloudflare-ipfs and update/create DNSLink TXT record"
+inputs:
+  CF_API_TOKEN:
+    description: Cloudlare access token with required permissions
+    required: true
+  CF_ZONE_ID: 
+    description: Cloudlare zone id
+    required: true
+  CF_DEPLOYMENT_DOMAIN:
+    description: Domain for which to create/update records
+    required: true
+  HASH:
+    description: IPFS hash for DNSLink record
+    required: true
+runs:
+  using: "node16"
+  main: "dist/index.js"

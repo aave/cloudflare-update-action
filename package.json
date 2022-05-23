@@ -1,0 +1,28 @@
+{
+  "name": "cloudflare-update-action",
+  "version": "1.0.0",
+  "description": "Update DNSLink on cloudflare github action",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build index.js --license LICENSE",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aave/cloudflare-update-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aave/cloudflare-update-action/issues"
+  },
+  "homepage": "https://github.com/aave/cloudflare-update-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.33.1"
+  }
+}
